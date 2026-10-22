@@ -1,0 +1,24 @@
+/* ESTILOS IMPORTADOS
+    Fichero: fonts.css
+    Autor: Karim Hanounio Otero
+    Fecha:oct/22/2026
+*/
+
+@font-face {
+    font-family: 'inter';
+    src: url(../../assets/fonts/static/Inter-Regular.ttf) format(truetype);
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'inter';
+    src: url(../../assets/fonts/static/Inter-Bold.ttf) format(truetype);
+    font-style: normal;
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'inter';
+    src: url(../../assets/fonts/static/Inter-ExtraBold.ttf) format(truetype);
+    font-style: normal;
+    font-weight: 800;
+}
