@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" >
+  <title>PetShop Express - Tu tienda de mascotas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Encabezado de la página -->
+  <header class="header">
+    <h1>PetShop Express</h1>
+    <figure class="logo">
+      <img src="./image/LogoMascotas.png" class="logo-img" alt="Logo de la tienda PetShop Express">
+    </figure>
+    <nav class="nav">
+      <a href="#">Inicio</a>
+      <a href="#">Perros</a>
+      <a href="#">Gatos</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- Banner principal / Hero -->
+  <section class="hero">
+    <h2 style="font-size: 28px; font-weight: bold">
+      ¡Super Ofertas de Primavera!
+    </h2>
+    <p>Aprovecha hasta un 50% de descuento en piensos seleccionados.</p>
+    <a class="btn-buy" onclick="location.href = 'ofertas.html'">
+      <span>Ver catálogo de ofertas</span>
+    </a>
+  </section>
+
+  <!-- Contenido principal -->
+  <section class="main-content">
+    <h2 class="h2">
+      Productos Destacados
+    </h2>
+
+    <div class="product-grid">
+      <!-- Producto 1 -->
+      <div class="card">
+        <img class="card-img" src="./image/pienso-perro.jpg" alt="Imagen de un saco de pienso de color verde de 15kg sabor pollo">
+        <div class="titulo">
+          Pienso Premium Perro
+        </div>
+        <div class="price">
+          35,99 € <span class="badge-promo">¡Solo hoy en rojo!</span>
+        </div>
+        <p>Nutrición completa para perros adultos.</p>
+        <button class="btn-buy" onclick="comprar(1)">Comprar</button>
+      </div>
+
+      <!-- Producto 2 -->
+      <div class="card">
+        <img class="card-img" src="./image/rarcador_gato.jpg" alt="Imagen del rascador">
+        <div class="titulo">
+          Rascador Árbol Gato
+        </div>
+        <div class="price">24,50 €</div>
+        <p>Rascador con tres niveles y juguete de bola.</p>
+        <button class="btn-buy" onclick="comprar(2)">Comprar</button>
+      </div>
+
+      <!-- Producto 3 -->
+      <div class="card">
+        <img class="card-img" src="./image/comedero.jpg" alt="Foto">
+        <div class="titulo">
+          Comedero Acero Inox
+        </div>
+        <div class="price">8,99 €</div>
+        <p>Antideslizante y lavable en lavavajillas.</p>
+        <button class="btn-buy" onclick="comprar(3)">Comprar</button>
+      </div>
+    </div>
+
+    <!-- Sección Newsletter -->
+    <div class="newsletter-section">
+      <h2>
+        Suscríbete a nuestro boletín
+      </h2>
+      <p>Recibe ofertas exclusivas en tu correo electrónico.</p>
+
+      <form id="newsForm">
+        <label for="emailInput">Correo electrónico:</label>
+        <input type="email" id="emailInput" placeholder="ejemplo@correo.com" style="border: 1px solid red">
+        <span class="error-text" id="emailError">Formato de correo inválido</span>
+        <div class="btn-buy">Suscribirme</div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer class="footer">
+    <p>&copy; 2026 PetShop Express. Todos los derechos reservados.</p>
+    <p>
+      Para más información sobre envíos y devoluciones,
+      <a href="politica.html" style="color: #aaa">haz clic aquí</a>.
+    </p>
+    <nav class="redes">
+      <a href="" class="icono"><img src="./image/facebook.png" alt="Enlace a la página de facebook"></a>
+      <a href="" class="icono"><img src="./image/instagram.png" alt="Enlace a la página de instagram"></a>
+    </nav>
+  </footer>
+</body>
+
+</html>
