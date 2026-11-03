@@ -8,25 +8,38 @@
 </head>
 
 <body>
-  <header class="terminologia">Terminología accesibilidad de la Web</header>
-  <div>
+  <header class="header">
+    <h1>Terminología accesibilidad de la Web</h1>
+  </header>
+  <section class="container">
     <div class="cards">
       <div class="card">
-        <p style="font-size: 1.5rem;font-weight: bold;">Estándares Web</p>
+        <h2>Estándares Web</h2>
         <!-- FALLO: El lector de pantalla intentará leer "WCAG" como una sola palabra impronunciable -->
-        <p>El estándar <span class="sigla badge-sigla">WCAG</span> es importante.</p>
+        <!--CORREGIDO-->
+        <p>El estándar
+          <span class="badge-sigla" aria-hidden="true">WCAG</span>
+          <span class="sr-only">W C A G</span>
+          es importante.</p>
         <!-- FALLO: El lector leerá "28 barra 09 barra 2026" en lugar de pronunciar la fecha de forma fluida -->
-        <p>Última revisión: 28/09/2026</p>
+        <!--CORREGIDO-->
+        <p>Última revisión:
+          <span aria-hidden="true">28/09/2026</span>
+          <span class="sr-only"> 28 de septiembre de 2026</span>
+        </p>
       </div>
       <div class="card">
-        <p class="badge-sigla"><span class="sigla badge-sigla">WAI</span></p>
+        <p>
+          <span class="badge-sigla" aria-hidden="true">WAI</span>
+          <span class="sr-only">W A I</span>
+        </p>
         <p>Una de las principales iniciativas del W3C es la WAI (Web Accessibility Initiative) que se encarga del
           desarrollo de
           normas de accesibilidad.
         </p>
       </div>
     </div>
-  </div>
+  </section>
 </body>
 
 </html>

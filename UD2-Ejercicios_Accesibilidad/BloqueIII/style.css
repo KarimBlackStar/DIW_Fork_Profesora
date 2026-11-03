@@ -6,9 +6,7 @@ body {
 }
 
 /* FALLO: Intento obsoleto de controlar lectura con CSS no soportado por lectores actuales */
-.sigla {
-    speak-as: spell-out;
-}
+/*eliminamos el css style de .sigla*/
 
 p {
     line-height: 2rem;
